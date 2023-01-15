@@ -1,0 +1,30 @@
+:root {
+  --clr-neutral-100: hsl(210, 17, 98);
+  --clr-neutral-200: hsl(210, 7, 58);
+  --clr-neutral-300: hsl(210, 9, 31);
+  --clr-neutral-400: hsl(210, 11, 15);
+  
+  --clr-accent-100: hsl(0, 86, 59);
+  --clr-accent-200: hsl(0, 65, 48);
+
+  --clr-graphic-orange-100: hsl(20, 88%, 50%);
+  --clr-graphic-orange-200: hsl(20, 88%, 48%);
+
+  --clr-graphic-red-100: hsl(0, 82%, 35%);
+  --clr-graphic-red-200: hsl(0, 82%, 33%);
+
+  --clr-graphic-gold-100: hsl(37, 76%, 67%);
+  --clr-graphic-gold-200: hsl(37, 70%, 65%);
+  --clr-graphic-gold-300: hsl(37, 60%, 61%);
+
+  --fs-100: ;
+
+  --fw-100: ;
+
+  --ff-primary: ;
+  --ff-secondary: ;
+  --ff-button: ;
+  --ff-nav: ;
+  --ff-brand: ;
+  --ff-ampersand: ;
+}
