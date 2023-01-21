@@ -16,3 +16,9 @@ svg {
   display: block;
   max-width: 100%;
 }
+
+.button img,
+.button svg {
+  display: inline-block;
+  max-width: unset;
+}
