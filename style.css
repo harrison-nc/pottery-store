@@ -84,6 +84,41 @@ main > header:first-child {
   background-position: center;
 }
 
+/* Graphic */
+
+.graphic img {
+  height: 64px;
+}
+
+.graphic .graphic-outer,
+.graphic .graphic-inner {
+  padding: var(--spacing-400);
+}
+
+.graphic:first-child .graphic-outer {
+  background-color: var(--clr-graphic-gold-200);
+}
+.graphic:first-child .graphic-inner {
+  background-color: var(--clr-graphic-gold-100);
+}
+.graphic:nth-child(2) .graphic-outer {
+  background-color: var(--clr-graphic-orange-200);
+}
+.graphic:nth-child(2) .graphic-inner {
+  background-color: var(--clr-graphic-orange-100);
+}
+.graphic:last-child .graphic-outer {
+  background-color: var(--clr-graphic-red-200);
+}
+.graphic:last-child .graphic-inner {
+  background-color: var(--clr-graphic-red-100);
+}
+
+.graphic .graphic-outer,
+.graphic .graphic-inner {
+  border-radius: 50%;
+}
+
 /* Components */
 
 .subtitle {
