@@ -86,6 +86,36 @@ main > header:first-child {
 
 /* Components */
 
+.graphic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+.graphic > img {
+  height: 64px;
+}
+
+.graphic:first-child {
+  border: 40px solid var(--clr-graphic-gold-300);
+  background-color: var(--clr-graphic-gold-200);
+}
+.graphic:nth-child(2) {
+  border: 40px solid var(--clr-graphic-orange-200);
+  background-color: var(--clr-graphic-orange-100);
+}
+.graphic:last-child {
+  border: 40px solid var(--clr-graphic-red-200);
+  background-color: var(--clr-graphic-red-100);
+}
+
 .subtitle {
   display: block;
   color: var(--clr-accent-100);
@@ -151,6 +181,11 @@ main > header:first-child {
 
 .text-centered {
   text-align: center;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center; 
 }
 
 .container {
@@ -264,4 +299,7 @@ main > header:first-child {
 }
 .gap-600 {
   gap: var(--spacing-600);
+}
+.gap-700 {
+  gap: var(--spacing-700);
 }
