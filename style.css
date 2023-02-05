@@ -84,6 +84,69 @@ main > header:first-child {
   background-position: center;
 }
 
+/* Graphic */
+
+.graphics {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.graphic {
+  position: relative;
+  isolation: isolate;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.graphic::before,
+.graphic::after {
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.graphic::before {
+  --size: 200px;
+  top: calc(50% - (var(--size) / 2));
+  left: calc(50% - (var(--size) / 2));
+}
+
+.graphic::after {
+  --size: 125px;
+  left: calc(50% - (var(--size) / 2));
+  top: calc(50% - (var(--size) / 2));
+}
+
+.graphic:first-child::before {
+  background-color: var(--clr-graphic-gold-200);
+}
+.graphic:first-child::after {
+  background-color: var(--clr-graphic-gold-100);
+}
+.graphic:nth-child(2)::before {
+  background-color: var(--clr-graphic-orange-200);
+}
+.graphic:nth-child(2)::after {
+  background-color: var(--clr-graphic-orange-100);
+}
+.graphic:last-child::before {
+  background-color: var(--clr-graphic-red-200);
+}
+.graphic:last-child::after {
+  background-color: var(--clr-graphic-red-100);
+}
+
+.graphic > img {
+  width: 64px;
+}
+
 /* Components */
 
 .subtitle {
@@ -264,4 +327,7 @@ main > header:first-child {
 }
 .gap-600 {
   gap: var(--spacing-600);
+}
+.gap-700 {
+  gap: var(--spacing-700);
 }
