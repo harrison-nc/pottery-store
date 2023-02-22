@@ -1,5 +1,6 @@
 :root {
   box-sizing: border-box;
+  isolation: isolate;
 }
 
 *,
@@ -9,6 +10,7 @@
   margin: 0;
   padding: 0;
   font: inherit;
+  isolation: inherit;
 }
 
 img,
