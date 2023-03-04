@@ -86,7 +86,7 @@ main > header:first-child {
   background-position: center;
 }
 
-section {
+.section {
   border-bottom: 1px solid var(--clr-neutral-150);
 }
 
