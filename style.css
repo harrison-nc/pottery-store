@@ -93,6 +93,26 @@ main > header:first-child {
 
 /* Products */
 
+.products {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.products article {
+  display: flex;
+  flex-flow: column;
+  gap: var(--spacing-100);
+  padding-block: var(--spacing-100);
+}
+
+.products article strong {
+  display: block;
+}
+
+.products article span {
+  font-weight: var(--fw-200);
+}
+
 .product-img {
   display: flex;
   justify-content: center;
@@ -113,6 +133,10 @@ main > header:first-child {
   position: absolute;
   top: calc(50% - (var(--height) / 2));
   z-index: -1;
+}
+
+.row img {
+  height: 493px;
 }
 
 /* Graphic */
@@ -241,6 +265,16 @@ main > header:first-child {
   letter-spacing: 0.15rem;
 }
 
+.button[data-button="primary"] {
+  text-transform: uppercase;
+  padding: var(--spacing-300) var(--spacing-400);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;;
+}
+
 /* Content */
 
 .content p {
@@ -269,6 +303,11 @@ main > header:first-child {
 
 .even-columns > * {
   flex: 1;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
 }
 
 .text-upper {
