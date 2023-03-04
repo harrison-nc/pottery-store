@@ -261,13 +261,21 @@ main > header:first-child {
 
 .button:not([data-button-cart]) {
   color: var(--clr-neutral-100);
-  background-color: var(--clr-accent-200);
   letter-spacing: 0.15rem;
 }
 
-.button[data-button="primary"] {
+.button[data-button] {
   text-transform: uppercase;
   padding: var(--spacing-300) var(--spacing-400);
+}
+
+.button[data-button="primary"] {
+  background-color: var(--clr-accent-200);
+}
+
+.button[data-button="secondary"] {
+  background-color: var(--clr-neutral-400);
+  padding-block: var(--spacing-200);
 }
 
 .button-group {
