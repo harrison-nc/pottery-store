@@ -1,5 +1,6 @@
 :root {
   --clr-neutral-100: hsl(210, 17%, 98%);
+  --clr-neutral-120: hsl(210, 17%, 95%);
   --clr-neutral-150: hsl(210, 17%, 89%);
   --clr-neutral-200: hsl(210, 7%, 58%);
   --clr-neutral-300: hsl(210, 9%, 31%);
@@ -88,6 +89,29 @@ main > header:first-child {
 
 .section {
   border-bottom: 1px solid var(--clr-neutral-150);
+}
+
+/* Products */
+
+.product-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.product-img img {
+  height: 509px;
+}
+
+.product-img .underlay {
+  --height: 180px;
+
+  height: var(--height);
+  width: 450px;
+  background-color: var(--clr-neutral-120);
+  position: absolute;
+  top: calc(50% - (var(--height) / 2));
+  z-index: -1;
 }
 
 /* Graphic */
@@ -223,6 +247,10 @@ main > header:first-child {
 }
 
 /* Utility */
+
+.centered {
+  align-items: center;
+}
 
 .text-centered {
   text-align: center;
