@@ -344,3 +344,27 @@ main > header:first-child {
 .section {
   border-bottom: 2px solid var(--clr-neutral-150);
 }
+
+.product-img {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+.product-img img {
+  height: 509px;
+}
+
+.underlay {
+  background-color: var(--clr-neutral-150);
+  width: 400px;
+  height: 180px;
+  position: absolute;
+  z-index: -1;
+  top: calc(50% - (180px / 2));
+}
+
+.centered {
+  align-items: center;
+  
+}
