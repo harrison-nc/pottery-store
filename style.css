@@ -103,9 +103,10 @@ main > header:first-child {
   height: 509px;
 }
 
-.product-img .underlay {
+.product-img::before {
   --height: 180px;
 
+  content: "";
   height: var(--height);
   width: 450px;
   background-color: var(--clr-neutral-120);
