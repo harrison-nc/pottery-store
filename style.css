@@ -264,16 +264,17 @@ main > header:first-child {
   letter-spacing: 0.15rem;
 }
 
-.button[data-button] {
+.button-primary {
+  background-color: var(--clr-accent-200);
+}
+
+.button-primary,
+.button-secondary {
   text-transform: uppercase;
   padding: var(--spacing-300) var(--spacing-400);
 }
 
-.button[data-button="primary"] {
-  background-color: var(--clr-accent-200);
-}
-
-.button[data-button="secondary"] {
+.button-secondary {
   background-color: var(--clr-neutral-400);
   padding-block: var(--spacing-200);
 }
