@@ -1,5 +1,6 @@
 :root {
   --clr-neutral-100: hsl(210, 17%, 98%);
+  --clr-neutral-150: hsl(210, 17%, 89%);
   --clr-neutral-200: hsl(210, 7%, 58%);
   --clr-neutral-300: hsl(210, 9%, 31%);
   --clr-neutral-400: hsl(210, 11%, 15%);
@@ -21,6 +22,7 @@
   --fs-200: 1rem;
   --fs-300: 1.25rem;
   --fs-400: 1.5rem;
+  --fs-450: 1.875rem;
   --fs-500: 2rem;
 
   --fw-100: 500;
@@ -69,7 +71,7 @@ h2 {
   font-size: var(--fs-400);
 }
 h3 {
-  font-size: var(--fs-300);
+  font-size: var(--fs-450);
 }
 h4 {
   font-size: var(--fs-200);
@@ -82,6 +84,10 @@ main > header:first-child {
   background-image: url(/assets/background_1.jpg);
   background-size: cover;
   background-position: center;
+}
+
+section {
+  border-bottom: 1px solid var(--clr-neutral-150);
 }
 
 /* Graphic */
@@ -210,6 +216,12 @@ main > header:first-child {
   letter-spacing: 0.15rem;
 }
 
+/* Content */
+
+.content p {
+  line-height: 1.7rem;
+}
+
 /* Utility */
 
 .text-centered {
@@ -270,6 +282,8 @@ main > header:first-child {
 }
 .py-600 {
   padding-block: var(--spacing-600);
+}.py-700 {
+  padding-block: var(--spacing-700);
 }
 
 .px-100 {
