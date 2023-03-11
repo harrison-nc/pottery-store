@@ -1,0 +1,20 @@
+
+ button {
+  width: 200px;
+  height: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+.normal {
+background-color: #fff;
+}
+
+ .primary {
+  background-color: rgb(255,127,127);
+}
+
+.secondary {
+  background-color: rgb(127,127,255);
+}
+
