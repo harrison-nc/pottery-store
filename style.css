@@ -199,22 +199,32 @@ main > header:first-child {
   align-items: center;
   gap: var(--spacing-100);
   border: 0;
-  background-color: unset;
-  font-family: var(--ff-secondary);
-  font-size: var(--fs-100);
-  text-transform: capitalize;
+  /* background-color: unset; */
 }
 
 .button img {
   width: 20px;
 }
 
-.button:not([data-button-cart]) {
+.button-primary {
   color: var(--clr-neutral-100);
   background-color: var(--clr-accent-200);
-  letter-spacing: 0.15rem;
+  }
+
+.button-secondary {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-400);
+  
 }
 
+.button-primary,
+.button-secondary {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-100);
+  text-transform: capitalize;
+  letter-spacing: 0.15rem;
+  
+}
 /* Utility */
 
 .text-centered {
@@ -367,4 +377,26 @@ main > header:first-child {
 .centered {
   align-items: center;
   
+}
+
+.row {
+  display: flex;
+  gap: var(--spacing-400);
+  justify-content: center;
+  align-items: center;  
+}
+
+.row article {
+padding-top: var(--spacing-300);
+}
+
+.row img {
+height: 493px;
+}
+
+.row article strong {
+  display: block;
+}
+.row article span {
+  font-weight: var(--fw-200);
 }
