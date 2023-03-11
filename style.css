@@ -87,8 +87,56 @@ main > header:first-child {
   background-position: center;
 }
 
+aside > header {
+  background-image: url(/assets/background_2.png);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+}
+
+aside > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section {
   border-bottom: 1px solid var(--clr-neutral-150);
+}
+
+/* Newsletter */
+
+.newsletter {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: var(--spacing-400);
+}
+
+.newsletter form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: var(--spacing-300);
+}
+
+.newsletter img {
+  display: none;
+}
+
+.newsletter input {
+  padding: var(--spacing-200); 
+}
+
+.newsletter .title {
+  text-align: center;
+  line-height: 1.85;
+}
+
+.newsletter .control-group {
+  display: flex;
 }
 
 /* Products */
@@ -290,6 +338,16 @@ main > header:first-child {
 }
 
 /* Utility */
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
 .centered {
   align-items: center;
