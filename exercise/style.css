@@ -1,20 +1,23 @@
-
- button {
+.button {
   width: 200px;
   height: 100px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
+  background-color: #fff;
 }
 
-.normal {
-background-color: #fff;
+.button.primary {
+  background-color: rgb(255, 127, 127);
 }
 
- .primary {
-  background-color: rgb(255,127,127);
+.button.secondary {
+  background-color: rgb(127, 127, 255);
 }
 
-.secondary {
-  background-color: rgb(127,127,255);
+.button[data-button-type="primary"] {
+  background-color: rgb(255, 127, 127);
 }
 
+.button[data-button-type="secondary"] {
+  background-color: rgb(127, 127, 255);
+}

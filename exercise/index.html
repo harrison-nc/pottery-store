@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/exercise/style.css">
   <title>Exercise</title>
 </head>
+
 <body>
 
+  <button type="button" class="button">Normal</button>
+  <button type="button" class="button primary">Primary</button>
+  <button type="button" class="button secondary">Secondary</button>
+
+  <button type="button" class="button secondary primary">Unknown</button>
+  <p class="primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, eligendi.</p>
   
-      <button class="normal">Normal</button>
-      <button class="primary">Primary</button>
-      <button class="secondary">Secondary</button>
+  <br>
   
-    </body>
+  <button type="button" class="button">Normal</button>
+  <button type="button" class="button" data-button-type="primary">Primary</button>
+  <button type="button" class="button" data-button-type="secondary">Secondary</button>
+  
+  <button type="button" class="button" data-button-type="secondary primary">Unknown</button>
+  <p data-button-type="primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, eligendi.</p>
+
+</body>
+
 </html>
